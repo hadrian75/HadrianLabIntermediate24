@@ -4,7 +4,7 @@ def guess(secretWord):
     i = 0
     while i != len(secretWord):
         userInput = input(f"Masukan Huruf {i + 1} :")
-        if(userInput != " "):
+        if(userInput.strip() != ""):
               if(len(userInput) == 1):
                 if(userInput == secretWord[i]):
                     print(f"Huruf {i + 1} Anda Benar")
@@ -26,3 +26,4 @@ def guess(secretWord):
     print(f"Jawaban anda benar ({answer})")
 guess("Duren")
                 
+
