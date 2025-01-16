@@ -1,15 +1,15 @@
 answer = ""
 def guess(secretWord):
-    counter = 0
+    # counter = 0
     global answer
     i = 0
     while i != len(secretWord):
-        if(counter == 5):
-            print("\nKesempatan Habis")
-            break
+        # if(counter == 5):
+        #     print("\nKesempatan Habis")
+        #     break
         userInput = input(f"Masukan Huruf {i + 1} :")
-        if(userInput):
-            counter +=1
+        # if(userInput):
+        #     counter +=1
         if(userInput.strip() != ""):
               if(len(userInput) == 1):
                 if(userInput == secretWord[i]):
