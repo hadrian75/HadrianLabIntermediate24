@@ -7,7 +7,7 @@ def guess(secretWord):
         # if(counter == 5):
         #     print("\nKesempatan Habis")
         #     break
-        userInput = input(f"Masukan Huruf {i + 1} :")
+        userInput = input(f"Masukan Huruf {i + 1} : ")
         # if(userInput):
         #     counter +=1
         if(userInput.strip() != ""):
