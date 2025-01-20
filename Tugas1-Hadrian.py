@@ -26,7 +26,7 @@ def guess(secretWord):
                     # elif(userInput != secretWord[i]):
                     #     print(f"Huruf {i+1} Salah")
               else:
-                print("Tidak boleh lebih dari 1 huruf")
+                print("Tidak boleh lebih dari 1 Huruf")
         else:
             print("Jawaban tidak boleh kosong!")
     print(f"Jawaban anda benar ({answer})")
