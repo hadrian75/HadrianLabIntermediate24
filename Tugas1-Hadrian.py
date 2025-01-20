@@ -29,12 +29,7 @@ def guess(secretWord):
                 print("Tidak boleh lebih dari 1 huruf")
         else:
             print("Jawaban tidak boleh kosong!")
-    if(len(answer) == len(secretWord)):
-        print(f"Jawaban anda benar ({answer})")
-    elif(len(answer) < len(secretWord) and answer != ""):
-        print(f"Jawaban anda kurang tepat ({answer})")
-    elif(answer == ""):
-        print("Ups... Belum ada yang kejawab nih")
+    print(f"Jawaban anda benar ({answer})")
 guess("Duren")
                 
 
