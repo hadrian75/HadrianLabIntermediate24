@@ -10,7 +10,7 @@ def updateText(secretWord):
     letterGuessed = set()
     chances = len(set(secretWord)) + 2
     print("\n" + "="*30)
-    print(" " * 10 + "Welcome to Hangman")
+    print(" " * 5 + "Welcome to Hangman")
     print("="*30 + "\n")
     
     while chances > 0:
