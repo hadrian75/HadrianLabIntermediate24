@@ -79,7 +79,7 @@ def updateText(choicesWord):
         else:
             clear_terminal()
             print("Terima Kasih Telah Bermain!")
-            print(f"Your Score: {scores} from {len(listOfWords) - 1}")
+            print(f"Your Score: {scores} from {len(listOfWords) + len(guessedWords)}")
             print(f"Kata yang belum ditebak: {listOfWords}")
             print(f"Kata yang sudah ditebak: {guessedWords}")
         
