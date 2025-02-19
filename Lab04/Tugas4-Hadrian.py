@@ -12,7 +12,7 @@ def updateText(choicesWord):
     global scores
     choicesWord = random.choice(listOfWords).lower()
     letterGuessed = set()
-    chances = len(set(choicesWord)) + 2
+    chances = round(len(set(choicesWord))/2) + 2
     print("\n" + "="*30)
     print(" " * 5 + "Welcome to Hangman")
     print("="*30 + "\n")
@@ -44,7 +44,6 @@ def updateText(choicesWord):
             if guess not in letterGuessed:
                 letterGuessed.add(guess)
                 print(f"Bagus! Huruf '{guess}' ada dalam kata.")
-                chances -= 1
             else:
                 print(f"Anda sudah menebak huruf '{guess}'.")
         else:
@@ -76,7 +75,7 @@ def updateText(choicesWord):
         inputUser  = input()
         if inputUser .lower() == "y":
             clear_terminal()
-            updateText()  
+            updateText(random.choice(listOfWords).lower())  
         else:
             clear_terminal()
             print("Terima Kasih Telah Bermain!")
